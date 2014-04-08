@@ -1,0 +1,11 @@
+{
+    "require": {
+        "php": ">=5.3.9",
+        "elasticsearch/elasticsearch": "~0.4"
+    },
+    "autoload": {
+        "psr-0": {
+            "Holmes": "src/"
+        }
+    }
+}
