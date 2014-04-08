@@ -1,8 +1,8 @@
 {
-    "name": "sherlock/sherlock",
-    "description": "PHP Client for Elasticsearch",
+    "name": "holmes/holmes",
+    "description": "DBAL and Query builder for Elasticsearch",
     "keywords": ["search","client", "elasticsearch"],
-    "homepage": "https://sherlockphp.org",
+    "homepage": "umutcanonal.com",
     "type": "library",
     "license": "MIT",
     "authors": [
