@@ -3,19 +3,19 @@
  * User: Zachary Tong
  * Date: 2013-02-14
  * Time: 10:42 PM
- * @package Sherlock\components\mappings
+ * @package Holmes\components\mappings
  */
-namespace Sherlock\components\mappings;
+namespace ShHolmesomponents\mappings;
 
-use Sherlock\components;
-use Sherlock\common\exceptions;
+use SherHolmesponents;
+use SherloHolmesn\exceptions;
 
 /**
- * @method \Sherlock\components\mappings\Boolean field() field(\string $value)
- * @method \Sherlock\components\mappings\Boolean index_name() index_name(\string $value)
+ * @method \SherlockHolmesnts\mappings\Boolean field() field(\string $value)
+ * @method \Sherlock\cHolmess\mappings\Boolean index_name() index_name(\string $value)
  *
  */
-class Binary extends \Sherlock\components\BaseComponent implements \Sherlock\components\MappingInterface
+class Binary extends \Sherlock\comHolmesBaseComponent implements \Sherlock\compoHolmesppingInterface
 {
     protected $type;
 

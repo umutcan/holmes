@@ -1,17 +1,17 @@
 <?php
 
-namespace Sherlock\components\highlights;
+namespace Holmes\components\highlights;
 
-use Sherlock\components;
+use Holmes\components;
 
 /**
- * @method \Sherlock\components\highlights\Highlight pre_tags() pre_tags(array $value)
- * @method \Sherlock\components\highlights\Highlight post_tags() post_tags(array $value)
- * @method \Sherlock\components\highlights\Highlight number_of_fragments() number_of_fragments(\int $value)
- * @method \Sherlock\components\highlights\Highlight fragment_size() fragment_size(\int $value)
- * @method \Sherlock\components\highlights\Highlight fields() fields(array $value)
+ * @method \Holmes\components\highlights\Highlight pre_tags() pre_tags(array $value)
+ * @method \Holmes\components\highlights\Highlight post_tags() post_tags(array $value)
+ * @method \Holmes\components\highlights\Highlight number_of_fragments() number_of_fragments(\int $value)
+ * @method \Holmes\components\highlights\Highlight fragment_size() fragment_size(\int $value)
+ * @method \Holmes\components\highlights\Highlight fields() fields(array $value)
  */
-class Highlight extends \Sherlock\components\BaseComponent implements \Sherlock\components\HighlightInterface
+class Highlight extends \Holmes\components\BaseComponent implements \Holmes\components\HighlightInterface
 {
 
     public function __construct($hashMap = null)

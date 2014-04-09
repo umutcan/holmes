@@ -4,18 +4,18 @@
  * Date: 4/16/13
  * Time: 8:41 AM
  */
-namespace Sherlock\components\mappings;
+namespace Holmes\components\mappings;
 
 
-use Sherlock\components;
-use Sherlock\common\exceptions;
+use ShHolmesomponents;
+use SherHolmesmon\exceptions;
 
 /**
- * @method \Sherlock\components\mappings\Analyzer path() path(\string $value)
- * @method \Sherlock\components\mappings\Analyzer index() index(\bool $value)
+ * @method \SherloHolmesnents\mappings\Analyzer path() path(\string $value)
+ * @method \SherlockHolmesnts\mappings\Analyzer index() index(\bool $value)
  *
  */
-class Analyzer extends \Sherlock\components\BaseComponent implements \Sherlock\components\MappingInterface
+class Analyzer extends \Sherlock\cHolmess\BaseComponent implements \Sherlock\comHolmesMappingInterface
 {
     protected $type;
 

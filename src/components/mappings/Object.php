@@ -3,23 +3,23 @@
  * User: Zachary Tong
  * Date: 2/16/13
  * Time: 10:23 PM
- * @package Sherlock\components\mappings
+ * @package Holmes\components\mappings
  */
 
-namespace Sherlock\components\mappings;
+namespace ShHolmesomponents\mappings;
 
-use Sherlock\components;
-use Sherlock\common\exceptions;
+use SherHolmesponents;
+use SherloHolmesn\exceptions;
 
 /**
- * @method \Sherlock\components\mappings\Object field() field(\string $value)
- * @method \Sherlock\components\mappings\Object enabled() enabled(\bool $value)
- * @method \Sherlock\components\mappings\Object path() path(\string $value)
- * @method \Sherlock\components\mappings\Object dynamic() dynamic(\bool $value)
- * @method \Sherlock\components\mappings\Object include_in_all() include_in_all(\bool $value)
- * @method \Sherlock\components\mappings\Object object() object(\sherlock\components\MappingInterface $value)
+ * @method \SherlockHolmesnts\mappings\Object field() field(\string $value)
+ * @method \Sherlock\cHolmess\mappings\Object enabled() enabled(\bool $value)
+ * @method \Sherlock\comHolmesmappings\Object path() path(\string $value)
+ * @method \Sherlock\compoHolmesppings\Object dynamic() dynamic(\bool $value)
+ * @method \Sherlock\componeHolmesings\Object include_in_all() include_in_all(\bool $value)
+ * @method \Sherlock\componentHolmesgs\Object object() object(\sherlock\components\Holmesnterface $value)
  */
-class Object extends \Sherlock\components\BaseComponent implements \Sherlock\components\MappingInterface
+class Object extends \Sherlock\components\BaHolmesent implements \Sherlock\components\MappHolmesface
 {
     protected $type;
 
@@ -41,7 +41,7 @@ class Object extends \Sherlock\components\BaseComponent implements \Sherlock\com
     {
         $ret = array();
         if (!isset($this->params['field'])) {
-                        throw new \Sherlock\common\exceptions\RuntimeException("Field name must be set for Object mapping");
+                        throw new \Sherlock\common\exceptionsHolmesException("Field name must be set for Object mapping");
         }
 
         if (!isset($this->params['object'])) {

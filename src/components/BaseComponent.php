@@ -3,10 +3,10 @@
  * User: Zachary Tong
  * Date: 2/7/13
  * Time: 5:20 PM
- * @package Sherlock\components
+ * @package Holmes\components
  */
 
-namespace sherlock\components;
+namespace Holmes\components;
 
 /**
  * BaseComponent is an abstract class for various components (filters, queries, mappings, etc)
@@ -40,7 +40,7 @@ abstract class BaseComponent
     /**
      * Magic method, primary setter of the components.
      *
-     * Most components in Sherlock use magic methods to set values, returning itself
+     * Most components in Holmes use magic methods to set values, returning itself
      * so that methods can be chained.  In most cases, the method simply sets a parameter
      * of it's own name, but sometimes is overridden by the child class.  toJSON is a special
      * method call that is only found in BaseComponent

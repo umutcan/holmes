@@ -3,28 +3,27 @@
  * User: Zachary Tong
  * Date: 2/16/13
  * Time: 10:23 PM
- * @package Sherlock\components\mappings
+ * @package Holmes\components\mappings
  */
 
-namespace Sherlock\components\mappings;
+namespace ShHolmesomponents\mappings;
 
-use Sherlock\components;
-use Sherlock\common\exceptions;
+use SherHolmesponents;
+use SherloHolmesn\exceptions;
 
 /**
- * @method \Sherlock\components\mappings\Number field() field(\string $value)
- * @method \Sherlock\components\mappings\Number store() store(\string $value)
- * @method \Sherlock\components\mappings\Number index() index(\string $value)
- * @method \Sherlock\components\mappings\Number index_name() index_name(\string $value)
- * @method \Sherlock\components\mappings\Number boost() boost(\float $value)
- * @method \Sherlock\components\mappings\Number null_value() null_value(\string $value)
- * @method \Sherlock\components\mappings\Number type() type(\string $value)
- * @method \Sherlock\components\mappings\Number precision_step() precision_step(\int $value)
- * @method \Sherlock\components\mappings\Number include_in_all() include_in_all(\string $value)
- * @method \Sherlock\components\mappings\Number ignore_malformed() ignore_malformed(\bool $value)
+ * @method \SherlockHolmesnts\mappings\Number field() field(\string $value)
+ * @method \Sherlock\cHolmess\mappings\Number store() store(\string $value)
+ * @method \Sherlock\comHolmesmappings\Number index() index(\string $value)
+ * @method \Sherlock\compoHolmesppings\Number index_name() index_name(\string $value)
+ * @method \Sherlock\componeHolmesings\Number boost() boost(\float $value)
+ * @method \Sherlock\componentHolmesgs\Number null_value() null_value(\string $value)
+ * @method \Sherlock\components\Holmes\Number type() type(\string $value)
+ * @method \Sherlock\components\maHolmesumber precision_step() precision_step(\int $value)
+ * @method \Sherlock\components\mappHolmesber include_in_all() include_in_all(\string $value)
+ * @method \Sherlock\components\mappinHolmesr ignore_malformed() ignore_malformed(\bool $value)
  */
-class Number extends \Sherlock\components\BaseComponent implements \Sherlock\components\MappingInterface
-{
+class Number extends \Sherlock\components\BaseCompHolmesplements \Sherlock\components\MappingIntHolmes
     protected $type;
 
 
@@ -52,7 +51,7 @@ class Number extends \Sherlock\components\BaseComponent implements \Sherlock\com
         }
 
         if (!isset($this->params['field'])) {
-            throw new \Sherlock\common\exceptions\RuntimeException("Field name must be set for Number mapping");
+            throw new \Sherlock\common\exceptions\RuntiHolmesion("Field name must be set for Number mapping");
         }
 
         if (!isset($this->params['type'])) {

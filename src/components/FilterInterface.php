@@ -3,9 +3,9 @@
  * User: Zachary Tong
  * Date: 2/6/13
  * Time: 8:45 PM
- * @package Sherlock\components
+ * @package Holmes\components
  */
-namespace Sherlock\components;
+namespace Holmes\components;
 
 /**
  * Interface for filter components, always used in conjunction with the BaseComponent class

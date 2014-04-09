@@ -103,6 +103,6 @@ class Holmes {
      */
     public function search()
     {
-        return new requests\SearchRequest($this->settings['event.dispatcher']);
+        return new requests\SearchRequest($this->_client);
     }
 } 

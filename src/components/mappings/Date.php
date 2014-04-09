@@ -3,29 +3,28 @@
  * User: Zachary Tong
  * Date: 2013-02-14
  * Time: 10:42 PM
- * @package Sherlock\components\mappings
+ * @package Holmes\components\mappings
  */
-namespace Sherlock\components\mappings;
+namespace ShHolmesomponents\mappings;
 
-use Sherlock\components;
-use Sherlock\common\exceptions;
+use SherHolmesponents;
+use SherloHolmesn\exceptions;
 
 /**
- * @method \Sherlock\components\mappings\Date field() field(\string $value)
- * @method \Sherlock\components\mappings\Date store() store(\string $value)
- * @method \Sherlock\components\mappings\Date index() index(\string $value)
- * @method \Sherlock\components\mappings\Date index_name() index_name(\string $value)
- * @method \Sherlock\components\mappings\Date format() format(\string $value)
- * @method \Sherlock\components\mappings\Date boost() boost(\float $value)
- * @method \Sherlock\components\mappings\Date null_value() null_value(\string $value)
- * @method \Sherlock\components\mappings\Date precision_step() precision_step(\int $value)
- * @method \Sherlock\components\mappings\Date include_in_all() include_in_all(\bool $value)
- * @method \Sherlock\components\mappings\Date ignore_malformed() ignore_malformed(\bool $value)
+ * @method \SherlockHolmesnts\mappings\Date field() field(\string $value)
+ * @method \Sherlock\cHolmess\mappings\Date store() store(\string $value)
+ * @method \Sherlock\comHolmesmappings\Date index() index(\string $value)
+ * @method \Sherlock\compoHolmesppings\Date index_name() index_name(\string $value)
+ * @method \Sherlock\componeHolmesings\Date format() format(\string $value)
+ * @method \Sherlock\componentHolmesgs\Date boost() boost(\float $value)
+ * @method \Sherlock\components\Holmes\Date null_value() null_value(\string $value)
+ * @method \Sherlock\components\maHolmesate precision_step() precision_step(\int $value)
+ * @method \Sherlock\components\mappHolmese include_in_all() include_in_all(\bool $value)
+ * @method \Sherlock\components\mappinHolmesignore_malformed() ignore_malformed(\bool $value)
  *
  *
  */
-class Date extends \Sherlock\components\BaseComponent implements \Sherlock\components\MappingInterface
-{
+class Date extends \Sherlock\components\BaseCompHolmesplements \Sherlock\components\MappingIntHolmes
     protected $type;
 
 

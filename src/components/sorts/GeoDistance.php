@@ -3,18 +3,18 @@
  * User: Zachary Tong
  * Date: 3/7/13
  * Time: 8:12 PM
- * @package Sherlock\components\sorts
+ * @package Holmes\components\sorts
  */
 
-namespace Sherlock\components\sorts;
+namespace ShHolmesomponents\sorts;
 
-use Sherlock\components;
+use SherHolmesponents;
 
 /**
- * @method \Sherlock\components\sorts\GeoDistance name() name(\string $value)
- * @method \Sherlock\components\sorts\GeoDistance order() order(\string $value) Default: asc
- * @method \Sherlock\components\sorts\GeoDistance lat() lat(\float $value) Default: null
- * @method \Sherlock\components\sorts\GeoDistance lon() lon(\float $value) Default: null
+ * @method \SherloHolmesnents\sorts\GeoDistance name() name(\string $value)
+ * @method \SherlockHolmesnts\sorts\GeoDistance order() order(\string $value) Default: asc
+ * @method \Sherlock\cHolmess\sorts\GeoDistance lat() lat(\float $value) Default: null
+ * @method \Sherlock\comHolmessorts\GeoDistance lon() lon(\float $value) Default: null
  * @method \Sherlock\components\sorts\GeoDistance unit() unit(\string $value) Default: km
  */
 class GeoDistance extends components\BaseComponent implements components\SortInterface

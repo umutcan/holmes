@@ -5,30 +5,30 @@
  * Time: 11:19 AM
  */
 
-namespace Sherlock\components\facets;
+namespace Holmes\components\facets;
 
 
-use Sherlock\common\exceptions\RuntimeException;
-use Sherlock\components;
+use Holmes\common\exceptions\RuntimeException;
+use Holmes\components;
 
 /**
  * Class TermsStats
- * @package Sherlock\components\facets
+ * @package Holmes\components\facets
  *
- * @method \Sherlock\components\facets\TermsStats facetname() facetname(\string $value)
- * @method \Sherlock\components\facets\TermsStats size() size(\int $value)
- * @method \Sherlock\components\facets\TermsStats order() order(\string $value) Default: count
- * @method \Sherlock\components\facets\TermsStats all_terms() all_terms(\bool $value) Default: false
- * @method \Sherlock\components\facets\TermsStats exclude() exclude(array $value)
- * @method \Sherlock\components\facets\TermsStats regex() regex(\string $value)
- * @method \Sherlock\components\facets\TermsStats regex_flags() regex_flags(\int $value)
- * @method \Sherlock\components\facets\TermsStats key_field() key_field(\string $value)
- * @method \Sherlock\components\facets\TermsStats value_field() value_field(\string $value)
- * @method \Sherlock\components\facets\TermsStats key_script() key_script(\string $value)
- * @method \Sherlock\components\facets\TermsStats value_script() value_script(\string $value)
- * @method \Sherlock\components\facets\TermsStats params() params(\string $value)
- * @method \Sherlock\components\facets\TermsStats lang() lang(\string $value)
- * @method \Sherlock\components\facets\DateHistogram facet_filter() facet_filter(\Sherlock\components\FilterInterface $value)
+ * @method \Holmes\components\facets\TermsStats facetname() facetname(\string $value)
+ * @method \Holmes\components\facets\TermsStats size() size(\int $value)
+ * @method \Holmes\components\facets\TermsStats order() order(\string $value) Default: count
+ * @method \Holmes\components\facets\TermsStats all_terms() all_terms(\bool $value) Default: false
+ * @method \Holmes\components\facets\TermsStats exclude() exclude(array $value)
+ * @method \Holmes\components\facets\TermsStats regex() regex(\string $value)
+ * @method \Holmes\components\facets\TermsStats regex_flags() regex_flags(\int $value)
+ * @method \Holmes\components\facets\TermsStats key_field() key_field(\string $value)
+ * @method \Holmes\components\facets\TermsStats value_field() value_field(\string $value)
+ * @method \Holmes\components\facets\TermsStats key_script() key_script(\string $value)
+ * @method \Holmes\components\facets\TermsStats value_script() value_script(\string $value)
+ * @method \Holmes\components\facets\TermsStats params() params(\string $value)
+ * @method \Holmes\components\facets\TermsStats lang() lang(\string $value)
+ * @method \Holmes\components\facets\DateHistogram facet_filter() facet_filter(\Holmes\components\FilterInterface $value)
  */
 class TermsStats extends components\BaseComponent implements components\FacetInterface
 {
@@ -83,7 +83,7 @@ class TermsStats extends components\BaseComponent implements components\FacetInt
 
 
     /**
-     * @throws \Sherlock\common\exceptions\RuntimeException
+     * @throws \Holmes\common\exceptions\RuntimeException
      * @return array
      */
     public function toArray()

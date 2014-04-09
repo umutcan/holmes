@@ -12,8 +12,9 @@ use Holmes\common\exceptions;
 use Holmes\components;
 use Holmes\components\queries;
 use Symfony\Component\EventDispatcher\EventDispatcher;
-use sherlock\components\FacetInterface;
+use Holmes\components\FacetInterface;
 use Holmes\responses\QueryResponse;
+use Elasticsearch\Client;
 
 /**
  * SearchRequest facilitates searching an ES index using the ES query DSL
@@ -26,20 +27,13 @@ use Holmes\responses\QueryResponse;
  */
 class SearchRequest
 {
-    /**
-     * @var array
-     */
-    protected $params;
-
-    /**
-     * @var \Symfony\Component\EventDispatcher\EventDispatcher
-     */
-    protected $dispatcher;
+    /** var Elasticsearch\Client */
+    protected $client;
 
 
-    public function __construct($dispatcher)
+    public function __construct(Client $client)
     {
-        $this->params['filter'] = array();
+        $this->client = $client;
     }
 
 
@@ -265,32 +259,14 @@ class SearchRequest
         $body = $this->extractArgument($params, 'body');
         unset($params['body']);
 
+        $searchParams = array(
+            "index" => $index,
+            "type" => $type,
+            "body" => $finalQuery
+        );
+        $resultSet = $this->client->search($searchParams);
+        return $resultSet;
 
-        /** @var callback $endpointBuilder */
-        $endpointBuilder = $this->dicEndpoints;
-
-        /** @var \Elasticsearch\Endpoints\Search $endpoint */
-        $endpoint = $endpointBuilder('Search');
-        $endpoint->setIndex($index)
-            ->setType($type)
-            ->setBody($finalQuery);
-        $endpoint->setParams($params);
-        $response = $endpoint->performRequest();
-        return $response['data'];
-        /*
-        $command = new Command();
-        $command->index($index)
-            ->type($type)
-            ->id('_search' . $queryParams)
-            ->action('post')
-            ->data($finalQuery);
-
-        $this->batch->clearCommands();
-        $this->batch->addCommand($command);
-
-        $ret = parent::execute();
-
-        return $ret[0];*/
     }
 
 

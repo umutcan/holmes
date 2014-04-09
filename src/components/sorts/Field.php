@@ -3,17 +3,17 @@
  * User: Zachary Tong
  * Date: 3/7/13
  * Time: 8:12 PM
- * @package Sherlock\components\sorts
+ * @package Holmes\components\sorts
  */
 
-namespace Sherlock\components\sorts;
+namespace ShHolmesomponents\sorts;
 
-use Sherlock\components;
+use SherHolmesponents;
 
 /**
- * @method \Sherlock\components\sorts\Field name() name(\string $value)
- * @method \Sherlock\components\sorts\Field order() order(\string $value) Default: null
- * @method \Sherlock\components\sorts\Field missing() missing(\string $value) Default: null
+ * @method \SherloHolmesnents\sorts\Field name() name(\string $value)
+ * @method \SherlockHolmesnts\sorts\Field order() order(\string $value) Default: null
+ * @method \Sherlock\cHolmess\sorts\Field missing() missing(\string $value) Default: null
  * @method \Sherlock\components\sorts\Field ignore_unmapped() ignore_unmapped(\bool $value) Default: null
  */
 class Field extends components\BaseComponent implements components\SortInterface

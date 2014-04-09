@@ -5,27 +5,27 @@
  * Time: 10:56 AM
  */
 
-namespace Sherlock\components\facets;
+namespace Holmes\components\facets;
 
 
-use Sherlock\common\exceptions\BadMethodCallException;
-use Sherlock\common\exceptions\RuntimeException;
-use Sherlock\components;
+use Holmes\common\exceptions\BadMethodCallException;
+use Holmes\common\exceptions\RuntimeException;
+use Holmes\components;
 
 /**]
  * Class Histogram
- * @package Sherlock\components\facets
+ * @package Holmes\components\facets
  *
- * @method \Sherlock\components\facets\Histogram facetname() facetname(\string $value)
- * @method \Sherlock\components\facets\Histogram interval() interval(\int $value)
- * @method \Sherlock\components\facets\Histogram time_interval() time_interval(\string $value)
- * @method \Sherlock\components\facets\Histogram key_field() key_field(\string $value)
- * @method \Sherlock\components\facets\Histogram value_field() value_field(\string $value)
- * @method \Sherlock\components\facets\Histogram key_script() key_script(\string $value)
- * @method \Sherlock\components\facets\Histogram value_script() value_script(\string $value)
- * @method \Sherlock\components\facets\Histogram params() params(array $value)
- * @method \Sherlock\components\facets\TermsStats lang() lang(\string $value)
- * @method \Sherlock\components\facets\DateHistogram facet_filter() facet_filter(\Sherlock\components\FilterInterface $value)
+ * @method \Holmes\components\facets\Histogram facetname() facetname(\string $value)
+ * @method \Holmes\components\facets\Histogram interval() interval(\int $value)
+ * @method \Holmes\components\facets\Histogram time_interval() time_interval(\string $value)
+ * @method \Holmes\components\facets\Histogram key_field() key_field(\string $value)
+ * @method \Holmes\components\facets\Histogram value_field() value_field(\string $value)
+ * @method \Holmes\components\facets\Histogram key_script() key_script(\string $value)
+ * @method \Holmes\components\facets\Histogram value_script() value_script(\string $value)
+ * @method \Holmes\components\facets\Histogram params() params(array $value)
+ * @method \Holmes\components\facets\TermsStats lang() lang(\string $value)
+ * @method \Holmes\components\facets\DateHistogram facet_filter() facet_filter(\Holmes\components\FilterInterface $value)
  */
 class Histogram extends components\BaseComponent implements components\FacetInterface
 {
@@ -53,7 +53,7 @@ class Histogram extends components\BaseComponent implements components\FacetInte
     /**
      * @param $fieldName
      *
-     * @throws \Sherlock\common\exceptions\BadMethodCallException
+     * @throws \Holmes\common\exceptions\BadMethodCallException
      * @return $this
      */
     public function field($fieldName)
@@ -71,7 +71,7 @@ class Histogram extends components\BaseComponent implements components\FacetInte
 
 
     /**
-     * @throws \Sherlock\common\exceptions\RuntimeException
+     * @throws \Holmes\common\exceptions\RuntimeException
      * @return array
      */
     public function toArray()

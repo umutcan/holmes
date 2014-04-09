@@ -5,26 +5,26 @@
  * Time: 11:29 AM
  */
 
-namespace Sherlock\components\facets;
+namespace Holmes\components\facets;
 
 
-use Sherlock\common\exceptions\BadMethodCallException;
-use Sherlock\common\exceptions\RuntimeException;
-use Sherlock\components;
+use Holmes\common\exceptions\BadMethodCallException;
+use Holmes\common\exceptions\RuntimeException;
+use Holmes\components;
 
 /**]
  * Class GeoDistance
- * @package Sherlock\components\facets
+ * @package Holmes\components\facets
  *
- * @method \Sherlock\components\facets\GeoDistance facetname() facetname(\string $value)
- * @method \Sherlock\components\facets\GeoDistance ranges() ranges(array $value)
- * @method \Sherlock\components\facets\GeoDistance pin_location() pin_location(mixed $value)
- * @method \Sherlock\components\facets\GeoDistance unit() unit(\string $value)
- * @method \Sherlock\components\facets\GeoDistance value_field() value_field(\string $value)
- * @method \Sherlock\components\facets\GeoDistance value_script() value_script(string $value)
- * @method \Sherlock\components\facets\GeoDistance params() params(array $value)
- * @method \Sherlock\components\facets\GeoDistance lang() lang(\string $value)
- * @method \Sherlock\components\facets\DateHistogram facet_filter() facet_filter(\Sherlock\components\FilterInterface $value)
+ * @method \Holmes\components\facets\GeoDistance facetname() facetname(\string $value)
+ * @method \Holmes\components\facets\GeoDistance ranges() ranges(array $value)
+ * @method \Holmes\components\facets\GeoDistance pin_location() pin_location(mixed $value)
+ * @method \Holmes\components\facets\GeoDistance unit() unit(\string $value)
+ * @method \Holmes\components\facets\GeoDistance value_field() value_field(\string $value)
+ * @method \Holmes\components\facets\GeoDistance value_script() value_script(string $value)
+ * @method \Holmes\components\facets\GeoDistance params() params(array $value)
+ * @method \Holmes\components\facets\GeoDistance lang() lang(\string $value)
+ * @method \Holmes\components\facets\DateHistogram facet_filter() facet_filter(\Holmes\components\FilterInterface $value)
  */
 class GeoDistance extends components\BaseComponent implements components\FacetInterface
 {
@@ -51,7 +51,7 @@ class GeoDistance extends components\BaseComponent implements components\FacetIn
     /**
      * @param $fieldName
      *
-     * @throws \Sherlock\common\exceptions\BadMethodCallException
+     * @throws \Holmes\common\exceptions\BadMethodCallException
      * @return $this
      */
     public function field($fieldName)
@@ -67,7 +67,7 @@ class GeoDistance extends components\BaseComponent implements components\FacetIn
 
 
     /**
-     * @throws \Sherlock\common\exceptions\RuntimeException
+     * @throws \Holmes\common\exceptions\RuntimeException
      * @return array
      */
     public function toArray()

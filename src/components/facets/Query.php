@@ -5,20 +5,20 @@
  * Time: 11:10 AM
  */
 
-namespace Sherlock\components\facets;
+namespace Holmes\components\facets;
 
 
-use Sherlock\common\exceptions\BadMethodCallException;
-use Sherlock\common\exceptions\RuntimeException;
-use Sherlock\components;
+use Holmes\common\exceptions\BadMethodCallException;
+use Holmes\common\exceptions\RuntimeException;
+use Holmes\components;
 
 /**]
  * Class Query
- * @package Sherlock\components\facets
+ * @package Holmes\components\facets
  *
- * @method \Sherlock\components\facets\Query facetname() facetname(\string $value)
- * @method \Sherlock\components\facets\Query query() query(\Sherlock\components\QueryInterface $value)
- * @method \Sherlock\components\facets\DateHistogram facet_filter() facet_filter(\Sherlock\components\FilterInterface $value)
+ * @method \Holmes\components\facets\Query facetname() facetname(\string $value)
+ * @method \Holmes\components\facets\Query query() query(\Holmes\components\QueryInterface $value)
+ * @method \Holmes\components\facets\DateHistogram facet_filter() facet_filter(\Holmes\components\FilterInterface $value)
  */
 class Query extends components\BaseComponent implements components\FacetInterface
 {
@@ -38,7 +38,7 @@ class Query extends components\BaseComponent implements components\FacetInterfac
     /**
      * @param $fieldName
      *
-     * @throws \Sherlock\common\exceptions\BadMethodCallException
+     * @throws \Holmes\common\exceptions\BadMethodCallException
      * @return $this
      */
     public function field($fieldName)
@@ -56,7 +56,7 @@ class Query extends components\BaseComponent implements components\FacetInterfac
 
 
     /**
-     * @throws \Sherlock\common\exceptions\RuntimeException
+     * @throws \Holmes\common\exceptions\RuntimeException
      * @return array
      */
     public function toArray()

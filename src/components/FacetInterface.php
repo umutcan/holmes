@@ -5,7 +5,7 @@
  * Time: 6:16 AM
  */
 
-namespace Sherlock\components;
+namespace Holmes\components;
 
 /**
  * Interface for facet components, always used in conjunction with the BaseComponent class

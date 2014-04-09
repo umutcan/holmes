@@ -5,28 +5,28 @@
  * Time: 6:27 AM
  */
 
-namespace Sherlock\components\facets;
+namespace Holmes\components\facets;
 
 
-use Sherlock\common\exceptions\RuntimeException;
-use Sherlock\components;
+use Holmes\common\exceptions\RuntimeException;
+use Holmes\components;
 
 /**]
  * Class Terms
- * @package Sherlock\components\facets
+ * @package Holmes\components\facets
  *
- * @method \Sherlock\components\facets\Terms facetname() facetname(\string $value)
- * @method \Sherlock\components\facets\Terms size() size(\int $value)
- * @method \Sherlock\components\facets\Terms order() order(\string $value) Default: count
- * @method \Sherlock\components\facets\Terms all_terms() all_terms(\bool $value) Default: false
- * @method \Sherlock\components\facets\Terms exclude() exclude(array $value)
- * @method \Sherlock\components\facets\Terms regex() regex(\string $value)
- * @method \Sherlock\components\facets\Terms regex_flags() regex_flags(\int $value)
- * @method \Sherlock\components\facets\Terms script() script(\string $value)
- * @method \Sherlock\components\facets\Terms script_field() script_field(\string $value)
- * @method \Sherlock\components\facets\Terms params() params(array $value)
- * @method \Sherlock\components\facets\Terms lang() lang(\string $value)
- * @method \Sherlock\components\facets\DateHistogram facet_filter() facet_filter(\Sherlock\components\FilterInterface $value)
+ * @method \Holmes\components\facets\Terms facetname() facetname(\string $value)
+ * @method \Holmes\components\facets\Terms size() size(\int $value)
+ * @method \Holmes\components\facets\Terms order() order(\string $value) Default: count
+ * @method \Holmes\components\facets\Terms all_terms() all_terms(\bool $value) Default: false
+ * @method \Holmes\components\facets\Terms exclude() exclude(array $value)
+ * @method \Holmes\components\facets\Terms regex() regex(\string $value)
+ * @method \Holmes\components\facets\Terms regex_flags() regex_flags(\int $value)
+ * @method \Holmes\components\facets\Terms script() script(\string $value)
+ * @method \Holmes\components\facets\Terms script_field() script_field(\string $value)
+ * @method \Holmes\components\facets\Terms params() params(array $value)
+ * @method \Holmes\components\facets\Terms lang() lang(\string $value)
+ * @method \Holmes\components\facets\DateHistogram facet_filter() facet_filter(\Holmes\components\FilterInterface $value)
  */
 class Terms extends components\BaseComponent implements components\FacetInterface
 {
@@ -80,7 +80,7 @@ class Terms extends components\BaseComponent implements components\FacetInterfac
 
 
     /**
-     * @throws \Sherlock\common\exceptions\RuntimeException
+     * @throws \Holmes\common\exceptions\RuntimeException
      * @return array
      */
     public function toArray()

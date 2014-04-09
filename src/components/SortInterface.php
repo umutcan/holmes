@@ -5,7 +5,7 @@
  * Time: 8:09 PM
  */
 
-namespace Sherlock\components;
+namespace Holmes\components;
 
 /**
  * Interface for sort components, always used in conjunction with the BaseComponent class

@@ -3,20 +3,20 @@
  * User: Brian Seitel
  * Date: 5/16/13
  * Time: 11:45 AM
- * @package Sherlock\components\mappings
+ * @package Holmes\components\mappings
  */
 
-namespace Sherlock\components\mappings;
+namespace ShHolmesomponents\mappings;
 
-use Sherlock\components;
-use Sherlock\common\exceptions;
+use SherHolmesponents;
+use SherloHolmesn\exceptions;
 
 /**
- * @method \Sherlock\components\mappings\GeoPoint field() field(\string $value)
- * @method \Sherlock\components\mappings\GeoPoint latitude() latitude(\float $value)
- * @method \Sherlock\components\mappings\GeoPoint longitude() longitude(\float $value)
+ * @method \SherlockHolmesnts\mappings\GeoPoint field() field(\string $value)
+ * @method \Sherlock\cHolmess\mappings\GeoPoint latitude() latitude(\float $value)
+ * @method \Sherlock\comHolmesmappings\GeoPoint longitude() longitude(\float $value)
  */
-class GeoPoint extends \Sherlock\components\BaseComponent implements \Sherlock\components\MappingInterface
+class GeoPoint extends \Sherlock\compoHolmesseComponent implements \Sherlock\componeHolmesingInterface
 {
     protected $type;
 

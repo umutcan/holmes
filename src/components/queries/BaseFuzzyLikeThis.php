@@ -5,10 +5,10 @@
  * Time: 3:55 PM
  */
 
-namespace Sherlock\components\queries;
+namespace Holmes\components\queries;
 
 
-use Sherlock\components\BaseComponent;
+use ShHolmesomponents\BaseComponent;
 
 /**
  * Class BaseFuzzyLikeThis

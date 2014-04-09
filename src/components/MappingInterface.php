@@ -3,10 +3,10 @@
  * User: Zachary Tong
  * Date: 2/16/13
  * Time: 8:14 PM
- * @package Sherlock\components
+ * @package Holmes\components
  */
 
-namespace Sherlock\components;
+namespace Holmes\components;
 
 /**
  * Interface for Mapping components, always used in conjunction with the BaseComponent class

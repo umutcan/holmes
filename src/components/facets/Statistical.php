@@ -5,21 +5,21 @@
  * Time: 11:15 AM
  */
 
-namespace Sherlock\components\facets;
+namespace Holmes\components\facets;
 
 
-use Sherlock\common\exceptions\RuntimeException;
-use Sherlock\components;
+use Holmes\common\exceptions\RuntimeException;
+use Holmes\components;
 
 /**]
  * Class Statistical
- * @package Sherlock\components\facets
+ * @package Holmes\components\facets
  *
- * @method \Sherlock\components\facets\Statistical facetname() facetname(\string $value)
- * @method \Sherlock\components\facets\Statistical script() script(\string $value)
- * @method \Sherlock\components\facets\Statistical params() params(array $value)
- * @method \Sherlock\components\facets\Statistical lang() lang(\string $value)
- * @method \Sherlock\components\facets\DateHistogram facet_filter() facet_filter(\Sherlock\components\FilterInterface $value)
+ * @method \Holmes\components\facets\Statistical facetname() facetname(\string $value)
+ * @method \Holmes\components\facets\Statistical script() script(\string $value)
+ * @method \Holmes\components\facets\Statistical params() params(array $value)
+ * @method \Holmes\components\facets\Statistical lang() lang(\string $value)
+ * @method \Holmes\components\facets\DateHistogram facet_filter() facet_filter(\Holmes\components\FilterInterface $value)
  */
 class Statistical extends components\BaseComponent implements components\FacetInterface
 {
@@ -64,7 +64,7 @@ class Statistical extends components\BaseComponent implements components\FacetIn
 
 
     /**
-     * @throws \Sherlock\common\exceptions\RuntimeException
+     * @throws \Holmes\common\exceptions\RuntimeException
      * @return array
      */
     public function toArray()
